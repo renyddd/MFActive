@@ -31,7 +31,7 @@ Page({
         this.saveDataToServer();
       } else {
         wx.showToast({
-          title: '给我们反馈点意见，让我们一起变得更好',
+          title: '给我们反馈点意见，让我们一起变得更好！',
         })
       }
 

@@ -1,12 +1,13 @@
 <!--miniprogram/pages/advance/advance.wxml-->
+<!-- new line -->
 <view class="content">
   <form bindsubmit="formSubmit">
     <view class="text-content">
       <view class='input-content'>
-        <input placeholder="写个标题~" />
+        <input placeholder="建议标题" />
       </view>
       <view class='text-area'>
-        <textarea name="input-content" type="text" placeholder="输入详细描述~" value="{{textContent}}" bindblur='getTextAreaContent'></textarea>
+        <textarea name="input-content" type="text" placeholder="对问题的详细描述" value="{{textContent}}" bindblur='getTextAreaContent'></textarea>
       </view>
     </view>
 

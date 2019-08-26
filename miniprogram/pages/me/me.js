@@ -1,7 +1,7 @@
 // miniprogram/pages/me/me.js
 var app = getApp();
 Page({
-
+ 
   actioncnt: function() {        
     wx.showActionSheet({            
       itemList:  ['群聊',  '好友',  '朋友圈'],

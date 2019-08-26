@@ -31,7 +31,7 @@ Page({
         this.saveDataToServer();
       } else {
         wx.showToast({
-          title: '给我们反馈点意见，让我们一起变得更好~',
+          title: '给我们反馈点意见，让我们一起变得更好',
         })
       }
 
@@ -52,11 +52,15 @@ Page({
    */
   showTipAndSwitchTab: function (event) {
     wx.showToast({
-      title: '反馈成功，后台会加急处理的~',
+      title: '反馈成功',
     })
-    wx.navigateBack({
-      url: '../home/home',
-    })
+    setTimeout(function () {
+      //要延时执行的代码
+      wx.navigateBack({
+        url: '../home/home',
+      })
+    }, 1000) //延迟时间
+    
   },
  
 

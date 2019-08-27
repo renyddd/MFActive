@@ -1,3 +1,4 @@
+// 用户上传数据 ifshow 默认为 false；经由管理员改为 true
 var that
 const app = getApp()
 Page({
@@ -7,6 +8,10 @@ Page({
 // 先存活！！！统一由管理员审核并发布！！
 // 只有管理员有写权限，用户只能申请发布
 // 最后在审核时写清楚，此非 ugc 程序。可以理解为管路员产生内容吗？
+
+// ifshow 字段即为 admin 应筛选字段
+// 接下来的任务是，去掉评论功能；并且开发一个管理员的客户端 done
+
 
   /**
    * 页面的初始数据
@@ -43,7 +48,7 @@ Page({
       .orderBy('date', 'desc')    // 管理员的筛选应该添加在此处
       .where({   // 判断问题解决，注意查看官方文档 https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-client-api/database/collection.where.html
         'ifshow':true
-      })
+      }) // 此处为 admin 人工对内容进行审核，每晚定时审查并发布
       .get({
         success: function(res) {
           // res.data 是包含以上定义的两条记录的数组

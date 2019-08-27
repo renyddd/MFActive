@@ -14,7 +14,7 @@
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "活动助手",
+    "navigationBarTitleText": "MFactive",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
@@ -30,7 +30,7 @@
       },
       {
         "pagePath": "pages/publish/publish",
-        "text": "发布",
+        "text": "发布申请",
         "iconPath": "images/tab/publish_unselect.png",
         "selectedIconPath": "images/tab/publish_select.png"
       },

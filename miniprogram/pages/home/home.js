@@ -2,6 +2,12 @@ var that
 const app = getApp()
 Page({
 
+// https://www.sunzhongwei.com/wechat-mini-app-for-ugc-content-words-not-filter-audit-is-not-passed
+// 不要再做 ugc 1!!!!
+// 先存活！！！统一由管理员审核并发布！！
+// 只有管理员有写权限，用户只能申请发布
+// 最后在审核时写清楚，此非 ugc 程序。可以理解为管路员产生内容吗？
+
   /**
    * 页面的初始数据
    */
@@ -30,8 +36,14 @@ Page({
   getData: function() {
     const db = wx.cloud.database();
 
+    // 增加一个显示的判断条件 ifshow
+
+
     db.collection('topic')
-      .orderBy('date', 'desc')
+      .orderBy('date', 'desc')    // 管理员的筛选应该添加在此处
+      .where({   // 判断问题解决，注意查看官方文档 https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-client-api/database/collection.where.html
+        'ifshow':true
+      })
       .get({
         success: function(res) {
           // res.data 是包含以上定义的两条记录的数组

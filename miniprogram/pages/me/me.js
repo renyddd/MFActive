@@ -51,10 +51,11 @@ Page({
       url: '../advance/advance',
     })
   },
-
-
-  clickInvitivation: function(event) {
-    this.actioncnt();
+  // 申请发布
+  onPushClick:function(event){
+    wx.navigateTo({
+      url: '../publish/publish',
+    })
   },
 
   /**

@@ -11,8 +11,8 @@ App({
     }
 
     this.globalData = {
-      openid: 'wx006f72e99dbfff39',
-      evn: 'reny-71868c'
+      openid: 'wxaf17ace400e958e6',
+      evn: 'renyddd-a12d4'
     }
   }
 })

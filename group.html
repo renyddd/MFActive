@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>/etc/group</title>
+<meta name="Generator" content="Vim/7.4">
+<meta name="plugin-version" content="vim7.4_v1">
+<meta name="syntax" content="group">
+<meta name="settings" content="number_lines,use_css,pre_wrap,no_foldcolumn,expand_tabs,line_ids,prevent_copy=">
+<meta name="colorscheme" content="none">
+<style type="text/css">
+<!--
+pre { white-space: pre-wrap; font-family: monospace; color: #000000; background-color: #ffffff; }
+body { font-family: monospace; color: #000000; background-color: #ffffff; }
+* { font-size: 1em; }
+.Special { color: #c000c0; }
+.Constant { color: #c00000; }
+.LineNr { color: #af5f00; }
+.Identifier { color: #008080; }
+-->
+</style>
+
+<script type='text/javascript'>
+<!--
+
+/* function to open any folds containing a jumped-to line before jumping to it */
+function JumpToLine()
+{
+  var lineNum;
+  lineNum = window.location.hash;
+  lineNum = lineNum.substr(1); /* strip off '#' */
+
+  if (lineNum.indexOf('L') == -1) {
+    lineNum = 'L'+lineNum;
+  }
+  lineElem = document.getElementById(lineNum);
+  /* Always jump to new location even if the line was hidden inside a fold, or
+   * we corrected the raw number to a line ID.
+   */
+  if (lineElem) {
+    lineElem.scrollIntoView(true);
+  }
+  return true;
+}
+if ('onhashchange' in window) {
+  window.onhashchange = JumpToLine;
+}
+
+-->
+</script>
+</head>
+<body onload='JumpToLine();'>
+<pre id='vimCodeElement'>
+<span id="L1" class="LineNr"> 1 </span><span class="Identifier">root</span>:<span class="Special">x</span>:<span class="Constant">0</span>:
+<span id="L2" class="LineNr"> 2 </span><span class="Identifier">bin</span>:<span class="Special">x</span>:<span class="Constant">1</span>:
+<span id="L3" class="LineNr"> 3 </span><span class="Identifier">daemon</span>:<span class="Special">x</span>:<span class="Constant">2</span>:
+<span id="L4" class="LineNr"> 4 </span><span class="Identifier">sys</span>:<span class="Special">x</span>:<span class="Constant">3</span>:
+<span id="L5" class="LineNr"> 5 </span><span class="Identifier">adm</span>:<span class="Special">x</span>:<span class="Constant">4</span>:
+<span id="L6" class="LineNr"> 6 </span><span class="Identifier">tty</span>:<span class="Special">x</span>:<span class="Constant">5</span>:
+<span id="L7" class="LineNr"> 7 </span><span class="Identifier">disk</span>:<span class="Special">x</span>:<span class="Constant">6</span>:
+<span id="L8" class="LineNr"> 8 </span><span class="Identifier">lp</span>:<span class="Special">x</span>:<span class="Constant">7</span>:
+<span id="L9" class="LineNr"> 9 </span><span class="Identifier">mem</span>:<span class="Special">x</span>:<span class="Constant">8</span>:
+<span id="L10" class="LineNr">10 </span><span class="Identifier">kmem</span>:<span class="Special">x</span>:<span class="Constant">9</span>:
+<span id="L11" class="LineNr">11 </span><span class="Identifier">wheel</span>:<span class="Special">x</span>:<span class="Constant">10</span>:<span class="Identifier">renyddd</span>
+<span id="L12" class="LineNr">12 </span><span class="Identifier">cdrom</span>:<span class="Special">x</span>:<span class="Constant">11</span>:
+<span id="L13" class="LineNr">13 </span><span class="Identifier">mail</span>:<span class="Special">x</span>:<span class="Constant">12</span>:<span class="Identifier">postfix</span>
+<span id="L14" class="LineNr">14 </span><span class="Identifier">man</span>:<span class="Special">x</span>:<span class="Constant">15</span>:
+<span id="L15" class="LineNr">15 </span><span class="Identifier">dialout</span>:<span class="Special">x</span>:<span class="Constant">18</span>:
+<span id="L16" class="LineNr">16 </span><span class="Identifier">floppy</span>:<span class="Special">x</span>:<span class="Constant">19</span>:
+<span id="L17" class="LineNr">17 </span><span class="Identifier">games</span>:<span class="Special">x</span>:<span class="Constant">20</span>:
+<span id="L18" class="LineNr">18 </span><span class="Identifier">tape</span>:<span class="Special">x</span>:<span class="Constant">30</span>:
+<span id="L19" class="LineNr">19 </span><span class="Identifier">video</span>:<span class="Special">x</span>:<span class="Constant">39</span>:
+<span id="L20" class="LineNr">20 </span><span class="Identifier">ftp</span>:<span class="Special">x</span>:<span class="Constant">50</span>:
+<span id="L21" class="LineNr">21 </span><span class="Identifier">lock</span>:<span class="Special">x</span>:<span class="Constant">54</span>:
+<span id="L22" class="LineNr">22 </span><span class="Identifier">audio</span>:<span class="Special">x</span>:<span class="Constant">63</span>:
+<span id="L23" class="LineNr">23 </span><span class="Identifier">nobody</span>:<span class="Special">x</span>:<span class="Constant">99</span>:
+<span id="L24" class="LineNr">24 </span><span class="Identifier">users</span>:<span class="Special">x</span>:<span class="Constant">100</span>:
+<span id="L25" class="LineNr">25 </span><span class="Identifier">utmp</span>:<span class="Special">x</span>:<span class="Constant">22</span>:
+<span id="L26" class="LineNr">26 </span><span class="Identifier">utempter</span>:<span class="Special">x</span>:<span class="Constant">35</span>:
+<span id="L27" class="LineNr">27 </span><span class="Identifier">input</span>:<span class="Special">x</span>:<span class="Constant">999</span>:
+<span id="L28" class="LineNr">28 </span><span class="Identifier">systemd-journal</span>:<span class="Special">x</span>:<span class="Constant">190</span>:
+<span id="L29" class="LineNr">29 </span><span class="Identifier">systemd-network</span>:<span class="Special">x</span>:<span class="Constant">192</span>:
+<span id="L30" class="LineNr">30 </span><span class="Identifier">dbus</span>:<span class="Special">x</span>:<span class="Constant">81</span>:
+<span id="L31" class="LineNr">31 </span><span class="Identifier">polkitd</span>:<span class="Special">x</span>:<span class="Constant">998</span>:
+<span id="L32" class="LineNr">32 </span><span class="Identifier">abrt</span>:<span class="Special">x</span>:<span class="Constant">173</span>:
+<span id="L33" class="LineNr">33 </span><span class="Identifier">libstoragemgmt</span>:<span class="Special">x</span>:<span class="Constant">997</span>:
+<span id="L34" class="LineNr">34 </span><span class="Identifier">rpc</span>:<span class="Special">x</span>:<span class="Constant">32</span>:
+<span id="L35" class="LineNr">35 </span><span class="Identifier">colord</span>:<span class="Special">x</span>:<span class="Constant">996</span>:
+<span id="L36" class="LineNr">36 </span><span class="Identifier">cgred</span>:<span class="Special">x</span>:<span class="Constant">995</span>:
+<span id="L37" class="LineNr">37 </span><span class="Identifier">dip</span>:<span class="Special">x</span>:<span class="Constant">40</span>:
+<span id="L38" class="LineNr">38 </span><span class="Identifier">ssh_keys</span>:<span class="Special">x</span>:<span class="Constant">994</span>:
+<span id="L39" class="LineNr">39 </span><span class="Identifier">saslauth</span>:<span class="Special">x</span>:<span class="Constant">76</span>:
+<span id="L40" class="LineNr">40 </span><span class="Identifier">rtkit</span>:<span class="Special">x</span>:<span class="Constant">172</span>:
+<span id="L41" class="LineNr">41 </span><span class="Identifier">chrony</span>:<span class="Special">x</span>:<span class="Constant">993</span>:
+<span id="L42" class="LineNr">42 </span><span class="Identifier">kvm</span>:<span class="Special">x</span>:<span class="Constant">36</span>:<span class="Identifier">qemu</span>
+<span id="L43" class="LineNr">43 </span><span class="Identifier">qemu</span>:<span class="Special">x</span>:<span class="Constant">107</span>:
+<span id="L44" class="LineNr">44 </span><span class="Identifier">tss</span>:<span class="Special">x</span>:<span class="Constant">59</span>:
+<span id="L45" class="LineNr">45 </span><span class="Identifier">libvirt</span>:<span class="Special">x</span>:<span class="Constant">992</span>:
+<span id="L46" class="LineNr">46 </span><span class="Identifier">usbmuxd</span>:<span class="Special">x</span>:<span class="Constant">113</span>:
+<span id="L47" class="LineNr">47 </span><span class="Identifier">geoclue</span>:<span class="Special">x</span>:<span class="Constant">991</span>:
+<span id="L48" class="LineNr">48 </span><span class="Identifier">rpcuser</span>:<span class="Special">x</span>:<span class="Constant">29</span>:
+<span id="L49" class="LineNr">49 </span><span class="Identifier">nfsnobody</span>:<span class="Special">x</span>:<span class="Constant">65534</span>:
+<span id="L50" class="LineNr">50 </span><span class="Identifier">radvd</span>:<span class="Special">x</span>:<span class="Constant">75</span>:
+<span id="L51" class="LineNr">51 </span><span class="Identifier">setroubleshoot</span>:<span class="Special">x</span>:<span class="Constant">990</span>:
+<span id="L52" class="LineNr">52 </span><span class="Identifier">pulse-access</span>:<span class="Special">x</span>:<span class="Constant">989</span>:
+<span id="L53" class="LineNr">53 </span><span class="Identifier">pulse-rt</span>:<span class="Special">x</span>:<span class="Constant">988</span>:
+<span id="L54" class="LineNr">54 </span><span class="Identifier">pulse</span>:<span class="Special">x</span>:<span class="Constant">171</span>:
+<span id="L55" class="LineNr">55 </span><span class="Identifier">gdm</span>:<span class="Special">x</span>:<span class="Constant">42</span>:
+<span id="L56" class="LineNr">56 </span><span class="Identifier">gnome-initial-setup</span>:<span class="Special">x</span>:<span class="Constant">987</span>:
+<span id="L57" class="LineNr">57 </span><span class="Identifier">sshd</span>:<span class="Special">x</span>:<span class="Constant">74</span>:
+<span id="L58" class="LineNr">58 </span><span class="Identifier">avahi</span>:<span class="Special">x</span>:<span class="Constant">70</span>:
+<span id="L59" class="LineNr">59 </span><span class="Identifier">slocate</span>:<span class="Special">x</span>:<span class="Constant">21</span>:
+<span id="L60" class="LineNr">60 </span><span class="Identifier">postdrop</span>:<span class="Special">x</span>:<span class="Constant">90</span>:
+<span id="L61" class="LineNr">61 </span><span class="Identifier">postfix</span>:<span class="Special">x</span>:<span class="Constant">89</span>:
+<span id="L62" class="LineNr">62 </span><span class="Identifier">ntp</span>:<span class="Special">x</span>:<span class="Constant">38</span>:
+<span id="L63" class="LineNr">63 </span><span class="Identifier">stapusr</span>:<span class="Special">x</span>:<span class="Constant">156</span>:
+<span id="L64" class="LineNr">64 </span><span class="Identifier">stapsys</span>:<span class="Special">x</span>:<span class="Constant">157</span>:
+<span id="L65" class="LineNr">65 </span><span class="Identifier">stapdev</span>:<span class="Special">x</span>:<span class="Constant">158</span>:
+<span id="L66" class="LineNr">66 </span><span class="Identifier">tcpdump</span>:<span class="Special">x</span>:<span class="Constant">72</span>:
+<span id="L67" class="LineNr">67 </span><span class="Identifier">renyddd</span>:<span class="Special">x</span>:<span class="Constant">1000</span>:<span class="Identifier">renyddd</span>
+<span id="L68" class="LineNr">68 </span><span class="Identifier">apache</span>:<span class="Special">x</span>:<span class="Constant">48</span>:
+<span id="L69" class="LineNr">69 </span><span class="Identifier">mysql</span>:<span class="Special">x</span>:<span class="Constant">27</span>:
+</pre>
+</body>
+</html>
+<!-- vim: set foldmethod=manual : -->

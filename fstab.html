@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>/etc/fstab</title>
+<meta name="Generator" content="Vim/7.4">
+<meta name="plugin-version" content="vim7.4_v1">
+<meta name="syntax" content="fstab">
+<meta name="settings" content="number_lines,use_css,pre_wrap,no_foldcolumn,expand_tabs,line_ids,prevent_copy=">
+<meta name="colorscheme" content="none">
+<style type="text/css">
+<!--
+pre { white-space: pre-wrap; font-family: monospace; color: #000000; background-color: #ffffff; }
+body { font-family: monospace; color: #000000; background-color: #ffffff; }
+* { font-size: 1em; }
+.Comment { color: #0000c0; }
+.Constant { color: #c00000; }
+.LineNr { color: #af5f00; }
+.Identifier { color: #008080; }
+.Type { color: #008000; }
+.Statement { color: #af5f00; }
+-->
+</style>
+
+<script type='text/javascript'>
+<!--
+
+/* function to open any folds containing a jumped-to line before jumping to it */
+function JumpToLine()
+{
+  var lineNum;
+  lineNum = window.location.hash;
+  lineNum = lineNum.substr(1); /* strip off '#' */
+
+  if (lineNum.indexOf('L') == -1) {
+    lineNum = 'L'+lineNum;
+  }
+  lineElem = document.getElementById(lineNum);
+  /* Always jump to new location even if the line was hidden inside a fold, or
+   * we corrected the raw number to a line ID.
+   */
+  if (lineElem) {
+    lineElem.scrollIntoView(true);
+  }
+  return true;
+}
+if ('onhashchange' in window) {
+  window.onhashchange = JumpToLine;
+}
+
+-->
+</script>
+</head>
+<body onload='JumpToLine();'>
+<pre id='vimCodeElement'>
+<span id="L1" class="LineNr"> 1 </span>
+<span id="L2" class="LineNr"> 2 </span><span class="Comment">#</span>
+<span id="L3" class="LineNr"> 3 </span><span class="Comment"># /etc/fstab</span>
+<span id="L4" class="LineNr"> 4 </span><span class="Comment"># Created by anaconda on Mon Aug 19 10:14:17 2019</span>
+<span id="L5" class="LineNr"> 5 </span><span class="Comment">#</span>
+<span id="L6" class="LineNr"> 6 </span><span class="Comment"># Accessible filesystems, by reference, are maintained under '/dev/disk'</span>
+<span id="L7" class="LineNr"> 7 </span><span class="Comment"># See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info</span>
+<span id="L8" class="LineNr"> 8 </span><span class="Comment">#</span>
+<span id="L9" class="LineNr"> 9 </span>/dev/mapper/centos-root /                       <span class="Type">xfs</span>     <span class="Type">defaults</span>        <span class="Constant">0 0</span>
+<span id="L10" class="LineNr">10 </span><span class="Identifier">UUID</span><span class="Statement">=</span><span class="Constant">7b0e1fb4-8815-45c6-b312-8df663e3f921</span> /boot                   <span class="Type">xfs</span>     <span class="Type">defaults</span>        <span class="Constant">0 0</span>
+<span id="L11" class="LineNr">11 </span>/dev/mapper/centos-swap <span class="Statement">swap</span>                    <span class="Type">swap</span>    <span class="Type">defaults</span>        <span class="Constant">0 0</span>
+</pre>
+</body>
+</html>
+<!-- vim: set foldmethod=manual : -->

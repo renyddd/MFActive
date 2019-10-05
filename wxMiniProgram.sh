@@ -43,3 +43,4 @@ else
 fi
 
 # the end, to move the html file.
+mv $htmlfile /home/renyddd/MFActive-Administrator/

@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>/etc/anacrontab</title>
+<meta name="Generator" content="Vim/7.4">
+<meta name="plugin-version" content="vim7.4_v1">
+<meta name="syntax" content="conf">
+<meta name="settings" content="number_lines,use_css,pre_wrap,no_foldcolumn,expand_tabs,line_ids,prevent_copy=">
+<meta name="colorscheme" content="none">
+<style type="text/css">
+<!--
+pre { white-space: pre-wrap; font-family: monospace; color: #000000; background-color: #ffffff; }
+body { font-family: monospace; color: #000000; background-color: #ffffff; }
+* { font-size: 1em; }
+.Comment { color: #0000c0; }
+.LineNr { color: #af5f00; }
+-->
+</style>
+
+<script type='text/javascript'>
+<!--
+
+/* function to open any folds containing a jumped-to line before jumping to it */
+function JumpToLine()
+{
+  var lineNum;
+  lineNum = window.location.hash;
+  lineNum = lineNum.substr(1); /* strip off '#' */
+
+  if (lineNum.indexOf('L') == -1) {
+    lineNum = 'L'+lineNum;
+  }
+  lineElem = document.getElementById(lineNum);
+  /* Always jump to new location even if the line was hidden inside a fold, or
+   * we corrected the raw number to a line ID.
+   */
+  if (lineElem) {
+    lineElem.scrollIntoView(true);
+  }
+  return true;
+}
+if ('onhashchange' in window) {
+  window.onhashchange = JumpToLine;
+}
+
+-->
+</script>
+</head>
+<body onload='JumpToLine();'>
+<pre id='vimCodeElement'>
+<span id="L1" class="LineNr"> 1 </span><span class="Comment"># /etc/anacrontab: configuration file for anacron</span>
+<span id="L2" class="LineNr"> 2 </span>
+<span id="L3" class="LineNr"> 3 </span><span class="Comment"># See anacron(8) and anacrontab(5) for details.</span>
+<span id="L4" class="LineNr"> 4 </span>
+<span id="L5" class="LineNr"> 5 </span>SHELL=/bin/sh
+<span id="L6" class="LineNr"> 6 </span>PATH=/sbin:/bin:/usr/sbin:/usr/bin
+<span id="L7" class="LineNr"> 7 </span>MAILTO=root
+<span id="L8" class="LineNr"> 8 </span><span class="Comment"># the maximal random delay added to the base delay of the jobs</span>
+<span id="L9" class="LineNr"> 9 </span>RANDOM_DELAY=45
+<span id="L10" class="LineNr">10 </span><span class="Comment"># the jobs will be started during the following hours only</span>
+<span id="L11" class="LineNr">11 </span>START_HOURS_RANGE=3-22
+<span id="L12" class="LineNr">12 </span>
+<span id="L13" class="LineNr">13 </span><span class="Comment">#period in days   delay in minutes   job-identifier   command</span>
+<span id="L14" class="LineNr">14 </span>1   5   cron.daily      nice run-parts /etc/cron.daily
+<span id="L15" class="LineNr">15 </span>7   25  cron.weekly     nice run-parts /etc/cron.weekly
+<span id="L16" class="LineNr">16 </span>@monthly 45 cron.monthly        nice run-parts /etc/cron.monthly
+</pre>
+</body>
+</html>
+<!-- vim: set foldmethod=manual : -->
